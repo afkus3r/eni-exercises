@@ -4,11 +4,11 @@ In this repo I save the projects and exercises I make as part of my Web Develope
 
 #### 🗂 List of all courses
 
-[Algorithms](#Algorithms)
-[Java](#Java)
-[FrontEnd](#FrontEnd)
-[SQL](#SQL)
-[PHP](#PHP)
+[Algorithms](#Algorithms)  
+[Java](#Java)  
+[FrontEnd](#FrontEnd)  
+[SQL](#SQL)  
+[PHP](#PHP)  
 
 ## Algorithms
 
