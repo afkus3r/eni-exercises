@@ -12,3 +12,6 @@ In this repo I save the projects and exercises I make as part of my Web Develope
 ## Java
 
 📋 java
+
+#### TP1 [CookingTime](https://github.com/afkus3r/eni-exercises/tree/main/java/CookingTime)
+Calculate the cooking time depending on the meat, its weight and how cooked the user want it.
