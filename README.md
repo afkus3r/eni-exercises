@@ -9,6 +9,6 @@ In this repo I save the projects and exercises I make as part of my Web Develope
 [SQL](#SQL)  
 [PHP](#PHP)  
 
-## Java
+## Java ☕️
 
 📋 java
