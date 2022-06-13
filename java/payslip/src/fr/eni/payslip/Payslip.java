@@ -1,6 +1,7 @@
 package fr.eni.payslip;
 
 public class Payslip {
+    
     public int calculateBaseSalary (int nbHours, int hourlyRate) {
         int baseSalary = 0;
         for (int i = 0; i < nbHours; i++) {
@@ -36,6 +37,14 @@ public class Payslip {
 
     public int calculateBonus (int nbChildren) {
         int bonus = 0;
+        if (nbChildren == 1) {
+            bonus = 20;
+        } else if (nbChildren == 2) {
+            bonus = 50;
+        } else if (nbChildren > 2) {
+            bonus = 70 + (nbChildren - 2) * 20;
+        }
+        return bonus;
     }
 
     public static void main(String[] args) {
