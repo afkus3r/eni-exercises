@@ -1,6 +1,5 @@
 package fr.eni.cookingtime;
 
-import java.util.Objects;
 import java.util.Scanner;
 
 public class CookingTime {
@@ -17,7 +16,7 @@ public class CookingTime {
         System.out.println("Quelle cuisson voulez-vous, bleue, à point ou bien cuite ?");
         String cooking = stringInput.nextLine();
 
-        if (Objects.equals(meat, "boeuf")) {
+        if (meat.equals("boeuf")) {
             switch (cooking) {
                 case "bleue":
                     System.out.println("Vous devez cuire votre viande " + weight * 0.02 + " minutes.");
@@ -31,7 +30,7 @@ public class CookingTime {
                 default:
                     System.out.println("Veuilliez choisir une cuisson valide.");
             }
-        } else if (Objects.equals(meat, "porc")) {
+        } else if (meat.equals("porc")) {
             switch (cooking) {
                 case "bleue":
                     System.out.println("Vous devez cuire votre viande " + weight * 0.0375 + " minutes.");
