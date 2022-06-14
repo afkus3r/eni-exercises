@@ -58,7 +58,7 @@ public class Checks {
         sumChecks = sumChecksLower200 + sumChecksHigher200;
         averageChecks = sumChecks / nbChecks;
 
-        // Results display
+        // Display results
         System.out.println("Vous avez entrés " + nbChecks + " chèques pour un montant total de " + sumChecks + " et une moyenne de " + averageChecks + ".");
         System.out.println("Dont " + nbChecksLower200 + " chèque inférieurs à 200€ pour un total de " + sumChecksLower200 + ".");
         System.out.println("Et " + nbChecksHigher200 + " chèques supérieurs à 200€ pour un total de " + sumChecksHigher200 + ".");
