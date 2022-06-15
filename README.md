@@ -27,3 +27,8 @@ Finds and displays prime numbers up to a limit chosen by the user.
 
 **TP4 [Sissa's Chessboard](https://github.com/afkus3r/eni-exercises/tree/main/java/SissaChessboard)** : 
 Calculates sum of rice grains on Sissa's chessboard.
+
+**TP5 [Max Value](https://github.com/afkus3r/eni-exercises/tree/main/java/MaxValue)** : 
+Sorts two values.
+- ```Math.max()```
+- ```Integer.compare()```
