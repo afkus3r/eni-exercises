@@ -15,6 +15,7 @@ In this repo I save the projects and exercises I make as part of my Web Develope
 
 **TP1 [Cooking Time](https://github.com/afkus3r/eni-exercises/tree/main/java/CookingTime)** : 
 Calculates the cooking time depending on the meat, its weight and how cooked the user want it.
+- ```equals()```
 
 **TP2 [Payslip](https://github.com/afkus3r/eni-exercises/tree/main/java/payslip)** : 
 Creates a simple payslip depending on the user hours worked, hourly rate etc.
