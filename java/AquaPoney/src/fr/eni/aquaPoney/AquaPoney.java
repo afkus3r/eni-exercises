@@ -10,11 +10,7 @@ public class AquaPoney {
     static Random random = new Random();
 
     public static void main(String[] args) {
-        String BousquetString = initializePool(Bousquet);
-        String LeVeauString = initializePool(LeVeau);
-        String DuboscString = initializePool(Dubosc);
-
-        displayPool(BousquetString, LeVeauString, DuboscString);
+        displayPool(initializePool(Bousquet), initializePool(LeVeau), initializePool(Dubosc));
     }
 
     static String initializePool(char[] pony) {
@@ -25,16 +21,18 @@ public class AquaPoney {
         return new String(pony);
     }
 
-    static void movePony(char[] pony, int i) {
+    static String movePony(char[] pony, int i) {
         int randomIndex = random.nextInt(0, 3);
         pony[i + randomIndex] = ponyChar;
         pony[i] = ' ';
+        return new String(pony);
     }
 
-    static void movePonyBack(char[] pony, int i) {
+    static String movePonyBack(char[] pony, int i) {
         int randomIndex = random.nextInt(0, 3);
         pony[i - randomIndex] = ponyChar;
         pony[i] = ' ';
+        return new String(pony);
     }
 
     static void displayPool(String a, String b, String c) {
