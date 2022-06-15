@@ -33,3 +33,8 @@ Calculates sum of rice grains on Sissa's chessboard.
 Sorts two values.
 - ```Math.max()```
 - ```Integer.compare()```
+
+**TP6 [Word Shuffle](https://github.com/afkus3r/eni-exercises/tree/main/java/WordShuffle)** : 
+Gets a sentence from user and return the words with shuffled letters, except the words' first a and last letters.
+- ```split()```, ```toCharArray()```
+- ```Random()```, ```random.nextInt()```
