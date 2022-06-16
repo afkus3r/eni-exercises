@@ -32,7 +32,7 @@ public class AquaPoney {
                 } else if (Objects.equals(Bousquet[counter1], "<o")) {
                     BousquetString = movePonyBack(Bousquet, counter1, randomIndex);
                 }
-                counter1 = randomIndex;
+                counter1 += randomIndex;
 
                 randomIndex = random.nextInt(4);
                 if (Objects.equals(LeVeau[counter2], "o>")) {
@@ -40,7 +40,7 @@ public class AquaPoney {
                 } else if (Objects.equals(LeVeau[counter2], "<o")) {
                     LeVeauString = movePonyBack(LeVeau, counter2, randomIndex);
                 }
-                counter2 = randomIndex;
+                counter2 += randomIndex;
 
                 randomIndex = random.nextInt(4);
                 if (Objects.equals(Dubosc[counter3], "o>")) {
@@ -48,7 +48,7 @@ public class AquaPoney {
                 } else if (Objects.equals(Dubosc[counter3], "<o")) {
                     DuboscString = movePonyBack(Dubosc, counter3, randomIndex);
                 }
-                counter3 = randomIndex;
+                counter3 += randomIndex;
 
                 displayPool(BousquetString, LeVeauString, DuboscString);
             }
