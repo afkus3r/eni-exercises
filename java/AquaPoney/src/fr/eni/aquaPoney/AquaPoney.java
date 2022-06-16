@@ -35,7 +35,11 @@ public class AquaPoney {
 
     static String movePonyBack(String[] pony, int i) {
         int randomIndex = random.nextInt(4);
-        pony[i - randomIndex] = ponyFront;
+        if (i - randomIndex > 0) {
+            pony[i + randomIndex] = ponyBack;
+        } else {
+            pony[0] = ponyBack;
+        }
         pony[i] = " ";
         return String.join("", pony);
     }
