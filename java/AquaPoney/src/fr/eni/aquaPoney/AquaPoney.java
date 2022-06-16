@@ -21,35 +21,77 @@ public class AquaPoney {
         String BousquetString = "";
         String LeVeauString = "";
         String DuboscString = "";
+
+        // Initialize and display pool for the start
         displayPool(initializePool(Bousquet), initializePool(LeVeau), initializePool(Dubosc));
 
         do {
+            // Let user press enter key
             String enter = enterInput.nextLine();
             if (Objects.equals(enter, "")) {
+
+                // FIRST PONY
                 randomIndex = random.nextInt(4);
+                // Make the pony move forward
                 if (Objects.equals(Bousquet[counter1], "o>")) {
                     BousquetString = movePony(Bousquet, counter1, randomIndex);
+                    if (counter1 + randomIndex < 24) {
+                        counter1 += randomIndex;
+                    } else {
+                        counter1 = 24;
+                    }
+                // Make the pony move backward
                 } else if (Objects.equals(Bousquet[counter1], "<o")) {
                     BousquetString = movePonyBack(Bousquet, counter1, randomIndex);
+                    if (counter1 - randomIndex > 0) {
+                        counter1 -= randomIndex;
+                    } else {
+                        counter1 = 0;
+                    }
                 }
                 counter1 += randomIndex;
 
+                // SECOND PONY
                 randomIndex = random.nextInt(4);
+                // Make the pony move forward
                 if (Objects.equals(LeVeau[counter2], "o>")) {
                     LeVeauString = movePony(LeVeau, counter2, randomIndex);
+                    if (counter2 + randomIndex < 24) {
+                        counter2 += randomIndex;
+                    } else {
+                        counter2 = 24;
+                    }
+                // Make the pony move backward
                 } else if (Objects.equals(LeVeau[counter2], "<o")) {
                     LeVeauString = movePonyBack(LeVeau, counter2, randomIndex);
+                    if (counter2 - randomIndex > 0) {
+                        counter2 -= randomIndex;
+                    } else {
+                        counter2 = 0;
+                    }
                 }
-                counter2 += randomIndex;
 
+                // THIRD PONY
                 randomIndex = random.nextInt(4);
+                // Make the pony move forward
                 if (Objects.equals(Dubosc[counter3], "o>")) {
                     DuboscString = movePony(Dubosc, counter3, randomIndex);
+                    if (counter3 + randomIndex > 0) {
+                        counter3 += randomIndex;
+                    } else {
+                        counter3 = 0;
+                    }
+                // Make the pony move backward
                 } else if (Objects.equals(Dubosc[counter3], "<o")) {
                     DuboscString = movePonyBack(Dubosc, counter3, randomIndex);
+                    if (counter3 - randomIndex > 0) {
+                        counter3 -= randomIndex;
+                    } else {
+                        counter3 = 0;
+                    }
                 }
-                counter3 += randomIndex;
 
+                // Display pool after the ponies moved
                 displayPool(BousquetString, LeVeauString, DuboscString);
             }
 
