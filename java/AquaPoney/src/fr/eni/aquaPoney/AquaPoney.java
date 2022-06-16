@@ -3,36 +3,41 @@ package fr.eni.aquaPoney;
 import java.util.Random;
 
 public class AquaPoney {
-    static char[] Bousquet = new char[25];
-    static char[] LeVeau = new char[25];
-    static char[] Dubosc = new char[25];
-    static char ponyChar = '*';
+    static String[] Bousquet = new String[25];
+    static String[] LeVeau = new String[25];
+    static String[] Dubosc = new String[25];
+    static String ponyFront = "o>";
+    static String ponyBack = "<o";
     static Random random = new Random();
 
     public static void main(String[] args) {
         displayPool(initializePool(Bousquet), initializePool(LeVeau), initializePool(Dubosc));
     }
 
-    static String initializePool(char[] pony) {
-        pony[0] = ponyChar;
+    static String initializePool(String[] pony) {
+        pony[0] = ponyFront;
         for (int i = 1; i < pony.length; i++) {
-            pony[i] = ' ';
+            pony[i] = " ";
         }
-        return new String(pony);
+        return String.join("", pony);
     }
 
-    static String movePony(char[] pony, int i) {
-        int randomIndex = random.nextInt(0, 3);
-        pony[i + randomIndex] = ponyChar;
-        pony[i] = ' ';
-        return new String(pony);
+    static String movePony(String[] pony, int i) {
+        int randomIndex = random.nextInt(4);
+        if (i + randomIndex < 25) {
+            pony[i + randomIndex] = ponyFront;
+        } else {
+            pony[24] = ponyBack;
+        }
+        pony[i] = " ";
+        return String.join("", pony);
     }
 
-    static String movePonyBack(char[] pony, int i) {
-        int randomIndex = random.nextInt(0, 3);
-        pony[i - randomIndex] = ponyChar;
-        pony[i] = ' ';
-        return new String(pony);
+    static String movePonyBack(String[] pony, int i) {
+        int randomIndex = random.nextInt(4);
+        pony[i - randomIndex] = ponyFront;
+        pony[i] = " ";
+        return String.join("", pony);
     }
 
     static void displayPool(String a, String b, String c) {
