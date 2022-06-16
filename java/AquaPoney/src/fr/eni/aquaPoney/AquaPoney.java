@@ -78,7 +78,7 @@ public class AquaPoney {
                     if (counter3 + randomIndex < 24) {
                         counter3 += randomIndex;
                     } else {
-                        counter3 = 0;
+                        counter3 = 24;
                     }
                     // Make the pony move backward
                 } else if (Objects.equals(Dubosc[counter3], "<o")) {
@@ -95,7 +95,7 @@ public class AquaPoney {
             }
 
 
-        } while (!Objects.equals(Bousquet[0], "<o") && !Objects.equals(LeVeau[0], "<o") && !Objects.equals(Dubosc[0], "<o"));
+        } while (!Objects.equals(Bousquet[0], "<o") || !Objects.equals(LeVeau[0], "<o") || !Objects.equals(Dubosc[0], "<o"));
     }
 
     static String initializePool(String[] pony) {
