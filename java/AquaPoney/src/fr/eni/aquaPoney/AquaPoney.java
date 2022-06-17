@@ -17,7 +17,7 @@ public class AquaPoney {
 
     public static void main(String[] args) {
         Scanner enterInput = new Scanner(System.in);
-        int randomIndex = 0;
+        int randomIndex;
         String BousquetString = "";
         String LeVeauString = "";
         String DuboscString = "";
@@ -41,6 +41,9 @@ public class AquaPoney {
                         counter1 = 24;
                     }
                     // Make the pony move backward
+                } else if (Objects.equals(Bousquet[0], "<o")) {
+                    Bousquet[0] = "<0";
+                    break;
                 } else if (Objects.equals(Bousquet[counter1], "<o")) {
                     BousquetString = movePonyBack(Bousquet, counter1, randomIndex);
                     if (counter1 - randomIndex > 0) {
@@ -61,6 +64,9 @@ public class AquaPoney {
                         counter2 = 24;
                     }
                     // Make the pony move backward
+                } else if (Objects.equals(LeVeau[0], "<o")) {
+                    LeVeau[0] = "<0";
+                    break;
                 } else if (Objects.equals(LeVeau[counter2], "<o")) {
                     LeVeauString = movePonyBack(LeVeau, counter2, randomIndex);
                     if (counter2 - randomIndex > 0) {
@@ -81,6 +87,9 @@ public class AquaPoney {
                         counter3 = 24;
                     }
                     // Make the pony move backward
+                } else if (Objects.equals(Dubosc[0], "<o")) {
+                    Dubosc[0] = "<0";
+                    break;
                 } else if (Objects.equals(Dubosc[counter3], "<o")) {
                     DuboscString = movePonyBack(Dubosc, counter3, randomIndex);
                     if (counter3 - randomIndex > 0) {
@@ -89,12 +98,9 @@ public class AquaPoney {
                         counter3 = 0;
                     }
                 }
-
                 // Display pool after the ponies moved
                 displayPool(BousquetString, LeVeauString, DuboscString);
             }
-
-
         } while (!Objects.equals(Bousquet[0], "<o") || !Objects.equals(LeVeau[0], "<o") || !Objects.equals(Dubosc[0], "<o"));
     }
 
