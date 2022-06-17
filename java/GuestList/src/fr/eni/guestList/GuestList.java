@@ -13,6 +13,7 @@ public class GuestList {
         int userInput = 0;
         int guestChoice = 0;
         String nameInput = "";
+        Boolean room = false;
 
         System.out.println("Bonjour, voici la liste actuelle des invités :");
         System.out.println(String.join(" ", guests));
@@ -25,11 +26,16 @@ public class GuestList {
             userInput = intInput.nextInt();
 
             if (userInput == 1) {
-                System.out.println("Entrer le nom de la personne que vous souhaitez ajouter :");
-                nameInput = stringInput.nextLine();
-                guests = addGuest(nameInput);
-                System.out.println("Voici la nouvelle liste :");
-                System.out.println(String.join(" ", guests));
+                room = testRoom();
+                if (room) {
+                    System.out.println("Entrer le nom de la personne que vous souhaitez ajouter :");
+                    nameInput = stringInput.nextLine();
+                    guests = addGuest(nameInput);
+                    System.out.println("Voici la nouvelle liste :");
+                    System.out.println(String.join(" ", guests));
+                } else {
+                    System.out.println("Il n'y a plus de place, vous devez supprimer quelqu'un avant de pouvoir ajouter un invité !");
+                }
             } else if (userInput == 2) {
                 System.out.println("Choisissez la personne que vous souhaitez supprimer :");
                 for (int i = 0; i < 6; i++) {
@@ -58,8 +64,18 @@ public class GuestList {
         for (int i = 0; i < 6; i++) {
             if (Objects.equals(guests[i], "")) {
                 guests[i] = name;
+                break;
             }
         }
         return guests;
+    }
+
+    static Boolean testRoom() {
+        for (int i = 0; i < 6; i++) {
+            if (Objects.equals(guests[i], "")) {
+                return true;
+            }
+        }
+        return false;
     }
 }
