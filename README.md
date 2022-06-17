@@ -11,28 +11,39 @@ In this repo I save the projects and exercises I make as part of my Web Develope
 
 ## Java
 
-**TP7 [Word Shuffle](https://github.com/afkus3r/eni-exercises/tree/main/java/WordShuffle)** : 
+<details>
+<summary> Click to see all Java exercises ☕️ </summary>
+
+**TP9 [Guest List](https://github.com/sheilaJava/eni-exercises/blob/main/java/GuestList/src/fr/eni/guestList/GuestList.java)** : 
+Lets user add and remove guests from a guest list.
+- ```break```
+
+**TP8 [Aqua Poney](https://github.com/sheilaJava/eni-exercises/blob/main/java/AquaPoney/src/fr/eni/aquaPoney/AquaPoney.java)** : 
+Mini game, a race of ponies in a pool, ponies move when user press the enter key
+
+**TP7 [Word Shuffle](https://github.com/sheilaJava/eni-exercises/blob/main/java/WordShuffle/src/fr/eni/wordShuffle/WordShuffle.java)** : 
 Gets a sentence from user and return the words with shuffled letters, except the words' first a and last letters.
 - ```split()```, ```toCharArray()```
 - ```Random()```, ```random.nextInt()```
 
-**TP6 [Max Value](https://github.com/afkus3r/eni-exercises/tree/main/java/MaxValue)** : 
+**TP6 [Max Value](https://github.com/sheilaJava/eni-exercises/blob/main/java/MaxValue/src/MaxValue.java)** : 
 Sorts two values.
 - ```Math.max()```
 - ```Integer.compare()```
 
-**TP5 [Sissa's Chessboard](https://github.com/afkus3r/eni-exercises/tree/main/java/SissaChessboard)** : 
+**TP5 [Sissa's Chessboard](https://github.com/sheilaJava/eni-exercises/blob/main/java/SissaChessboard/src/fr/eni/sissaChessboard/SissaChessboard.java)** : 
 Calculates sum of rice grains on Sissa's chessboard.
 
-**TP4 [Prime Numbers](https://github.com/afkus3r/eni-exercises/tree/main/java/PrimeNumbers)** : 
+**TP4 [Prime Numbers](https://github.com/sheilaJava/eni-exercises/blob/main/java/PrimeNumbers/src/fr/eni/primeNumbers/PrimeNumbers.java)** : 
 Finds and displays prime numbers up to a limit chosen by the user.
 
-**TP3 [Checks](https://github.com/afkus3r/eni-exercises/tree/main/java/Checks)** : 
+**TP3 [Checks](https://github.com/sheilaJava/eni-exercises/blob/main/java/Checks/src/fr/eni/checks/Checks.java)** : 
 Takes checks user input, calculates sums, averages and sorts out bigger and smaller checks.
 
-**TP2 [Payslip](https://github.com/afkus3r/eni-exercises/tree/main/java/payslip)** : 
+**TP2 [Payslip](https://github.com/sheilaJava/eni-exercises/blob/main/java/payslip/src/fr/eni/payslip/Payslip.java)** : 
 Creates a simple payslip depending on the user hours worked, hourly rate etc.
 
-**TP1 [Cooking Time](https://github.com/afkus3r/eni-exercises/tree/main/java/CookingTime)** : 
+**TP1 [Cooking Time](https://github.com/sheilaJava/eni-exercises/blob/main/java/CookingTime/src/fr/eni/cookingtime/CookingTime.java)** : 
 Calculates the required cooking time depending on the chosen meat, its weight and how cooked the user wants it.
 - ```equals()```
+</details>
