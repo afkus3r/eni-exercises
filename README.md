@@ -47,3 +47,13 @@ Creates a simple payslip depending on the user hours worked, hourly rate etc.
 Calculates the required cooking time depending on the chosen meat, its weight and how cooked the user wants it.
 - ```equals()```
 </details>
+
+## FrontEnd
+
+<details>
+<summary> Click to see all HTML and CSS exercises 💅🏻 </summary>
+
+**TP1 [Form](https://github.com/sheilaJava/eni-exercises/blob/main/frontend/forms/form.html)** : 
+Simple HTML form.
+
+</details>
