@@ -5,50 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulaire</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header>
-      <img src="./img/music.svg" alt="Logo" width="200" />
       <h1>My music</h1>
       <nav>
-        <img src="./img/profile.svg" alt="Profile picture" width="100" />
-        <p>Denis ENI, connecté</p>
-        <p>
-          <a href="">Mon compte</a>
-          |
-          <a href="">Déconnexion</a>
-        </p>
-        <p>Exemple Formulaire</p>
-        <a href="">ENI ECOLE</a>
-        <br />
-        <a href="Copyright© ENI ECOLE Informatique"></a>
+        <img src="./img/profile.svg" alt="Profile picture" id="profile" />
+        <p>Sheila ENI, connecté</p>
+        <a href="">Mon compte</a>
+        <a href="">Déconnexion</a>
       </nav>
     </header>
     <main>
-      <h2>Mon compte</h2>
       <form action="POST">
         <fieldset>
           <legend>Vos informations personnelles</legend>
-          <label for="name">Nom :</label>
-          <input type="text" name="name" id="name" />
-          <label for="date">Date de naissance :</label>
-          <input type="date" name="date" id="date" />
-          <label for="firstname">Prénom :</label>
-          <input type="text" name="firstname" id="firstname" />
-          <label for="band">Groupe préféré :</label>
-          <select id="band" name="band">
-            <option value="korn">Korn</option>
-            <option value="epica">Epica</option>
-            <option value="onedirection">One Direction</option>
-          </select>
-          <label for="email">Email :</label>
-          <input type="email" name="email" id="email" />
-          <label for="phone">Téléphone :</label>
-          <input type="text" name="phone" id="phone" />
-          <label for="password">Mot de passe :</label>
-          <input type="password" name="password" id="password" />
-          <label for="passwordR">Répéter le mot de passe :</label>
-          <input type="password" name="password" id="passwordR" />
+          <section class="nameInfo">
+            <div>
+              <label for="name">Nom</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div>
+              <label for="firstname">Prénom</label>
+              <input type="text" name="firstname" id="firstname" />
+            </div>
+          </section>
+          <div>
+            <label for="band">Groupe préféré</label>
+            <select id="band" name="band">
+              <option value="korn">Korn</option>
+              <option value="epica">Epica</option>
+              <option value="onedirection">One Direction</option>
+            </select>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div>
+            <label for="phone">Téléphone</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+          <div>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" />
+          </div>
         </fieldset>
         <fieldset>
           <legend>Votre Formulaire d'abonnement</legend>
@@ -106,5 +108,8 @@
         <button type="submit">Valider</button>
       </form>
     </main>
+    <footer>
+      <p>Exemple Formulaire | Copyright© ENI ECOLE Informatique</p>
+    </footer>
   </body>
 </html>
