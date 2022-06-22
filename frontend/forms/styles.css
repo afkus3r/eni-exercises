@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*HEADER*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: grey;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+nav > p {
+  margin: 0;
+}
+
+#profile {
+  width: 70px;
+}
