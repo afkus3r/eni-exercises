@@ -14,6 +14,7 @@ In this repo I save the projects and exercises I make as part of my Web Develope
 <details>
 <summary> Click to see all Java exercises ☕️ </summary>
 
+
 **TP9 [Guest List](https://github.com/sheilaJava/eni-exercises/blob/main/java/GuestList/src/fr/eni/guestList/GuestList.java)** : 
 Lets user add and remove guests from a guest list.
 - ```break```
@@ -52,6 +53,7 @@ Calculates the required cooking time depending on the chosen meat, its weight an
 
 <details>
 <summary> Click to see all HTML and CSS exercises 💅🏻 </summary>
+
 
 **TP1 [Form](https://github.com/sheilaJava/eni-exercises/blob/main/frontend/forms/form.html)** : 
 Simple HTML form.
