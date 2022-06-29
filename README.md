@@ -5,8 +5,7 @@ In this repo I save the projects and exercises I make as part of my Web Develope
 #### 🗂 List of all courses
 
 [Java](#Java)  
-[FrontEnd](#FrontEnd)  
-[SQL](#SQL)  
+[FrontEnd](#FrontEnd)   
 [PHP](#PHP)  
 
 ## Java
