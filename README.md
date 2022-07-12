@@ -11,8 +11,12 @@ In this repo I save the projects and exercises I make as part of my Web Develope
 ## Java
 
 <details>
-<summary> Click to see all Java exercises ☕️ </summary>
+<summary> Click to see procedural programming Java exercises ☕️ </summary>
 
+**TP10 [Scrabble](https://github.com/sheilaJava/eni-exercises/blob/main/java/Scrabble/src/fr/eni/Scrabble/Scrabble.java)** : 
+Simple Scrabble inspired game. Selects a random word from a text file, shuffles the letters and asks the player for the longest possible word with these letters.
+- Exceptions handling : ```try```, ```catch```
+- ```FileInputStream```
 
 **TP9 [Guest List](https://github.com/sheilaJava/eni-exercises/blob/main/java/GuestList/src/fr/eni/guestList/GuestList.java)** : 
 Lets user add and remove guests from a guest list.
