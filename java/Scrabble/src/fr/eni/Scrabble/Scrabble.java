@@ -19,7 +19,7 @@ public class Scrabble {
 
         // Get a random word from dictionary
         randomWord = getRandomWord(dictionary);
-        System.out.println(randomWord);
+
         // Shuffle random word's letters
         shuffledLetters = shuffleLetters(randomWord);
 
