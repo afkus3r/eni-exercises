@@ -2,6 +2,7 @@ package fr.eni.Scrabble;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.*;
 
 public class Scrabble {
@@ -41,13 +42,18 @@ public class Scrabble {
         } while (!verifyLetters(playerWord.toCharArray(), shuffledLetters) || !verifyWord(playerWord.toCharArray(), dictionary));
     }
 
-    static String[] createDictionaryArray() throws FileNotFoundException {
-        FileInputStream file = new FileInputStream("./dictionnaire.txt");
-        Scanner fileScan = new Scanner(file);
-        while (fileScan.hasNextLine()) {
-            dictionaryWords.add(fileScan.nextLine());
+    static String[] createDictionaryArray(){
+        try {
+            FileInputStream file = new FileInputStream("./dictionnaire.txt");
+            Scanner fileScan = new Scanner(file);
+            while (fileScan.hasNextLine()) {
+                dictionaryWords.add(fileScan.nextLine());
+            }
+            return dictionaryWords.toArray(new String[0]);
         }
-        return dictionaryWords.toArray(new String[0]);
+        catch (IOException exception) {
+            return new String[]{"bonjour", "chat", "voiture", "orange", "Soupe"};
+        }
     }
 
     static char[] getRandomWord(String[] dictionary) {
