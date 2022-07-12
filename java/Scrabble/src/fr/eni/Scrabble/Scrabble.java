@@ -72,11 +72,19 @@ public class Scrabble {
     }
 
     static boolean verifyLetters(char[] playerWord, char[] letters) {
-        char[] playerWordCopy = Arrays.copyOf(playerWord, playerWord.length);
         char[] lettersCopy = Arrays.copyOf(letters, letters.length);
-        Arrays.sort(playerWordCopy);
-        Arrays.sort(lettersCopy);
-        return Arrays.equals(playerWordCopy, lettersCopy);
+        int j = 0;
+        boolean verify = true;
+        while (verify && j < playerWord.length) {
+            int k = 0;
+            while (k < lettersCopy.length && playerWord[j] != lettersCopy[k]) {
+                k++; }
+            if (k == lettersCopy.length) verify = false;
+            else {
+                lettersCopy[k] = '0';
+                j++; }
+        }
+        return verify;
     }
 
     static boolean verifyWord(char[] playerWord, String[] dictionary) {
