@@ -19,7 +19,7 @@ public class Scrabble {
 
         // Get a random word from dictionary
         randomWord = getRandomWord(dictionary);
-
+        System.out.println(randomWord);
         // Shuffle random word's letters
         shuffledLetters = shuffleLetters(randomWord);
 
@@ -30,11 +30,11 @@ public class Scrabble {
             // Get player's input
             Scanner stringInput = new Scanner(System.in);
             System.out.println("Entrez un mot en utilisant les lettres tirées");
-            playerWord = stringInput.nextLine();
+            playerWord = stringInput.nextLine().toUpperCase();
 
             // Verify player's input and display result
             if (verifyLetters(playerWord.toCharArray(), shuffledLetters) && verifyWord(playerWord.toCharArray(), dictionary)) {
-                System.out.println("Le mot le plus long possible est : " + Arrays.toString(randomWord));
+                System.out.println("Le mot le plus long possible est : " + new String(randomWord));
             } else {
                 System.out.println("Ce mot n'est pas conforme, recommencez");
             }
@@ -42,7 +42,7 @@ public class Scrabble {
         } while (!verifyLetters(playerWord.toCharArray(), shuffledLetters) || !verifyWord(playerWord.toCharArray(), dictionary));
     }
 
-    static String[] createDictionaryArray(){
+    static String[] createDictionaryArray() {
         try {
             FileInputStream file = new FileInputStream("./dictionnaire.txt");
             Scanner fileScan = new Scanner(file);
@@ -50,8 +50,7 @@ public class Scrabble {
                 dictionaryWords.add(fileScan.nextLine());
             }
             return dictionaryWords.toArray(new String[0]);
-        }
-        catch (IOException exception) {
+        } catch (IOException exception) {
             return new String[]{"bonjour", "chat", "voiture", "orange", "Soupe"};
         }
     }
@@ -62,13 +61,14 @@ public class Scrabble {
     }
 
     static char[] shuffleLetters(char[] word) {
-        for (int i = 0; i < word.length; i++) {
-            char holder = word[i];
-            int randomInt = random.nextInt(word.length);
-            word[i] = word[randomInt];
-            word[randomInt] = holder;
+        char[] randomWordCopy = Arrays.copyOf(word, word.length);
+        for (int i = 0; i < randomWordCopy.length; i++) {
+            char holder = randomWordCopy[i];
+            int randomInt = random.nextInt(randomWordCopy.length);
+            randomWordCopy[i] = randomWordCopy[randomInt];
+            randomWordCopy[randomInt] = holder;
         }
-        return word;
+        return randomWordCopy;
     }
 
     static boolean verifyLetters(char[] playerWord, char[] letters) {
@@ -81,7 +81,7 @@ public class Scrabble {
 
     static boolean verifyWord(char[] playerWord, String[] dictionary) {
         for (String word : dictionary) {
-            if (Objects.equals(word, Arrays.toString(playerWord))) {
+            if (Objects.equals(word.toUpperCase(), new String(playerWord))) {
                 return true;
             }
         }
