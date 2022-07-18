@@ -87,14 +87,10 @@ public class SimpleCalendar {
         int holder = Integer.parseInt(matrix[1][6]) + 1;
         for (int i = 2; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                matrix[i][j] = String.valueOf(holder);
-                if (Objects.equals(matrix[i][j], String.valueOf(lastDay))) {
-                    break;
+                if (holder <= lastDay) {
+                    matrix[i][j] = String.valueOf(holder);
+                    holder++;
                 }
-                holder++;
-            }
-            if (holder == lastDay) {
-                break;
             }
         }
 
