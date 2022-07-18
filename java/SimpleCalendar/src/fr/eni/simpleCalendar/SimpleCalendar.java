@@ -66,6 +66,9 @@ public class SimpleCalendar {
             for (int j = 0; j < matrix[i].length; j++) {
                 matrix[i][j] = String.valueOf(holder);
                 holder++;
+                if (Objects.equals(matrix[i][j], String.valueOf(lastDay))) {
+                    break;
+                }
             }
         }
 
@@ -73,9 +76,10 @@ public class SimpleCalendar {
         System.out.println(" * " + monthName + " " + year + " * ");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                System.out.print(matrix[i][j] + " ");
-                if (Objects.equals(matrix[i][j], String.valueOf(lastDay))) {
-                    break;
+                if (matrix[i][j] == null) {
+                    System.out.println(" ");
+                } else {
+                    System.out.printf("%4d", matrix[i][j]);
                 }
             }
             System.out.println();
