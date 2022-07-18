@@ -78,7 +78,7 @@ public class SimpleCalendar {
         }
 
         for (int i = 1; i < 7 - firstDay + 2; i++) {
-            matrix[1][i + firstDay-2] = String.valueOf(i);
+            matrix[1][i + firstDay - 2] = String.format("%02d", i);;
         }
 
         // Initialize all other matrix elements
@@ -88,7 +88,7 @@ public class SimpleCalendar {
         for (int i = 2; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 if (holder <= lastDay) {
-                    matrix[i][j] = String.valueOf(holder);
+                    matrix[i][j] = String.format("%02d", holder);;
                     holder++;
                 }
             }
