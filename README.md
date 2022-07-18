@@ -16,18 +16,18 @@ In this repo I save the projects and exercises I make as part of my Web Develope
 **TP11 [Simple Calendar](https://github.com/sheilaJava/eni-exercises/blob/main/java/SimpleCalendar/src/fr/eni/simpleCalendar/SimpleCalendar.java)** :
 Display a monthly calendar in the console.
 - Introduction to classes : ```GregorianCalendar```
-- Matrix formatting
+- String matrix formatting : ```String.format()```
 
-**TP10 [Scrabble](https://github.com/sheilaJava/eni-exercises/blob/main/java/Scrabble/src/fr/eni/Scrabble/Scrabble.java)** : 
+**TP10 [Scrabble](https://github.com/sheilaJava/eni-exercises/blob/main/java/Scrabble/src/fr/eni/Scrabble/Scrabble.java)** :
 Simple Scrabble inspired game. Selects a random word from a text file, shuffles the letters and asks the player for the longest possible word with these letters.
 - Exceptions handling : ```try```, ```catch```
 - ```FileInputStream```
 
-**TP9 [Guest List](https://github.com/sheilaJava/eni-exercises/blob/main/java/GuestList/src/fr/eni/guestList/GuestList.java)** : 
+**TP9 [Guest List](https://github.com/sheilaJava/eni-exercises/blob/main/java/GuestList/src/fr/eni/guestList/GuestList.java)** :
 Lets user add and remove guests from a guest list.
 - ```break```
 
-**TP8 [Aqua Poney](https://github.com/sheilaJava/eni-exercises/blob/main/java/AquaPoney/src/fr/eni/aquaPoney/AquaPoney.java)** : 
+**TP8 [Aqua Poney](https://github.com/sheilaJava/eni-exercises/blob/main/java/AquaPoney/src/fr/eni/aquaPoney/AquaPoney.java)** :
 Mini game, a race of ponies in a pool, ponies move when user press the enter key
 
 **TP7 [Word Shuffle](https://github.com/sheilaJava/eni-exercises/blob/main/java/WordShuffle/src/fr/eni/wordShuffle/WordShuffle.java)** : 
