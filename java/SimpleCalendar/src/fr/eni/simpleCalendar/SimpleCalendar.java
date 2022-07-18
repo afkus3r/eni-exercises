@@ -79,7 +79,7 @@ public class SimpleCalendar {
                 if (matrix[i][j] == null) {
                     System.out.println(" ");
                 } else {
-                    System.out.printf("%4d", matrix[i][j]);
+                    System.out.print(matrix[i][j] + " ");
                 }
             }
             System.out.println();
