@@ -13,7 +13,7 @@ In this repo I save the projects and exercises I make as part of my Web Develope
 <details>
 <summary> Click to see procedural programming Java exercises ☕️ </summary>
 
-**TP11 [Simple Calendar](https://github.com/sheilaJava/eni-exercises/blob/main/java/SimpleCalendar/src/fr/eni/simpleCalendar/SimpleCalendar.java)** : 
+**TP11 [Simple Calendar](https://github.com/sheilaJava/eni-exercises/blob/main/java/SimpleCalendar/src/fr/eni/simpleCalendar/SimpleCalendar.java)** :
 Display a monthly calendar in the console.
 - Introduction to classes : ```GregorianCalendar```
 - Matrix formatting
