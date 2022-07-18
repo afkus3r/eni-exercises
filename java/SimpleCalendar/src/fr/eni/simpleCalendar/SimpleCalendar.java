@@ -2,10 +2,11 @@ package fr.eni.simpleCalendar;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Objects;
 
 public class SimpleCalendar {
     public static void main (String[] args) {
-        displayCalendar(6, 2022);
+        displayCalendar(5, 2022);
 
     }
     public static void displayCalendar(int month, int year) {
@@ -58,7 +59,9 @@ public class SimpleCalendar {
         }
 
         // Initialize all other matrix elements
-        int holder = Integer.parseInt(matrix[1][6]);
+        int lastDay = cal.getActualMaximum(Calendar.DATE);
+
+        int holder = Integer.parseInt(matrix[1][6]) + 1;
         for (int i = 2; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 matrix[i][j] = String.valueOf(holder);
@@ -71,6 +74,9 @@ public class SimpleCalendar {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 System.out.print(matrix[i][j] + " ");
+                if (Objects.equals(matrix[i][j], String.valueOf(lastDay))) {
+                    break;
+                }
             }
             System.out.println();
         }
