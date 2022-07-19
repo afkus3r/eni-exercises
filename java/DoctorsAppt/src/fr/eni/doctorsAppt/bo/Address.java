@@ -2,18 +2,24 @@ package fr.eni.doctorsAppt.bo;
 
 public class Address {
     private String additional;
-    private int streetNb;
+    private String street;
     private String zipTown;
 
-    public Address (String additional, int streetNb, String zipTown) {
+    public Address (String additional, int streetNb, String streetAdd, String streetName, int zip, String town) {
         this.additional = additional;
-        this.streetNb = streetNb;
-        this.zipTown = zipTown;
+        this.street = streetNb + " " + streetAdd + " " + streetName;
+        this.zipTown = zip + " " + town;
     }
 
-    public  Address (int streetNb, String zipTown) {
+    public  Address (int streetNb, String streetAdd, String streetName, int zip, String town) {
         this.additional = null;
-        this.streetNb = streetNb;
-        this.zipTown = zipTown;
+        this.street = streetNb + " " + streetAdd + " " + streetName;
+        this.zipTown = zip + " " + town;
+    }
+
+    public void display() {
+        System.out.println(additional);
+        System.out.println(street);
+        System.out.println(zipTown);
     }
 }
