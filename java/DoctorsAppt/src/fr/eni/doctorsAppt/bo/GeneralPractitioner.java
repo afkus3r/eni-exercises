@@ -34,6 +34,8 @@ public class GeneralPractitioner {
     }
 
     public void display() {
-        
+        System.out.println(this.lastName.toUpperCase() + " " + this.firstName);
+        System.out.println("Phone number : " + this.phone);
+        System.out.println("Appointment price : " + apptPrice);
     }
 }
