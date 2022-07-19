@@ -11,6 +11,16 @@ public class Patient {
     private LocalDate birthDate ;
     private String comments;
 
+    public Patient(String lastName, String firstName, String phone, char sex, long ssn, LocalDate birthDate, String comments) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.phone = phone;
+        this.sex = sex;
+        this.ssn = ssn;
+        this.birthDate = birthDate;
+        this.comments = comments;
+    }
+
     public void display() {
         System.out.println(this.lastName.toUpperCase() + " " + this.firstName);
         System.out.println("Phone number : " + this.phone);

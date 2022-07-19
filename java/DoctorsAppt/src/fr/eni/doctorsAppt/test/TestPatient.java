@@ -1,8 +1,8 @@
-package fr.eni.ecole.quelMedecin.test;
+package fr.eni.doctorsAppt.test;
 
 import java.time.LocalDate;
 
-import fr.eni.ecole.quelMedecin.bo.Patient;
+import fr.eni.doctorsAppt.bo.Patient;
 
 public class TestPatient {
 
@@ -15,10 +15,10 @@ public class TestPatient {
 		Patient adhemar = new Patient("Pamamobe", "Adhémar", "0753428619", 'M', 192112192020142l,
 				LocalDate.of(1992, 11, 21), null);
 		
-		hillary.afficher();
+		hillary.display();
 		System.out.println("------------------------------------------------------------------");
-		ines.afficher();
+		ines.display();
 		System.out.println("------------------------------------------------------------------");
-		adhemar.afficher();
+		adhemar.display();
 	}
 }
