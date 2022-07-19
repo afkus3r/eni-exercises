@@ -17,7 +17,7 @@ In this repo I save the projects and exercises I make as part of my Web Develope
 Doctors' appointments booking app.
 - Test classes
 - ```Objects.requireNonNullElse()```
-
+</details>
 
 <details>
 <summary> Click to see procedural programming Java exercises ☕️ </summary>
