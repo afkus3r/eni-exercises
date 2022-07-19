@@ -11,6 +11,7 @@ public class GeneralPractitioner {
         this.lastName = lastName;
         this.firstName = firstName;
         this.phone = phone;
+        apptPrice = 25;
     }
 
     public String getPhone() {

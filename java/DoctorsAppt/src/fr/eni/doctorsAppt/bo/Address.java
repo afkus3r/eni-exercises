@@ -18,7 +18,9 @@ public class Address {
     }
 
     public void display() {
-        System.out.println(additional);
+        if (this.additional != null) {
+            System.out.println(this.additional);
+        }
         System.out.println(street);
         System.out.println(zipTown);
     }

@@ -1,6 +1,7 @@
 package fr.eni.doctorsAppt.bo;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Patient {
     private String lastName;
@@ -24,9 +25,12 @@ public class Patient {
     public void display() {
         System.out.println(this.lastName.toUpperCase() + " " + this.firstName);
         System.out.println("Phone number : " + this.phone);
-        System.out.println("Sex : " + this.sex);
+        switch (this.sex) {
+            case 'F' -> System.out.println("Féminin");
+            case 'M' -> System.out.println("Masculin");
+        }
         System.out.println("SSN : " + this.ssn);
         System.out.println("Birth date : " + this.birthDate);
-        System.out.println("Comments : " + this.comments);
+        System.out.println(Objects.requireNonNullElse(this.comments, "Pas de commentaire"));
     }
 }
