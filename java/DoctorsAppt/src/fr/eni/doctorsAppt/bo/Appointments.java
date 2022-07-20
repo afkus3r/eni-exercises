@@ -16,7 +16,7 @@ public class Appointments {
     public void display() {
         System.out.print("Rendez vous du " + this.date + " ");
         this.timeSlot.displaySlot();
-        System.out.println("avec le ");
+        System.out.println("avec le Dr " + this.timeSlot.getDoctor().getLastName());
         System.out.print("pour ");
         this.patient.display();
     }
