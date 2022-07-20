@@ -17,9 +17,9 @@ public class TimeSlots {
         return this.doctor;
     }
 
-    public void display() {
-        System.out.print(startTime + " - ");
-        System.out.print(LocalTime.of(startTime.getHour(), startTime.getMinute() + duration));
-        System.out.print(" (" + duration + "minutes )");
+    public void displaySlot() {
+        System.out.print(this.startTime + " - ");
+        System.out.print(this.startTime.plusMinutes(duration));
+        System.out.println(" (" + this.duration + "minutes)");
     }
 }

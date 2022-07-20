@@ -5,7 +5,10 @@ public class GeneralPractitioner {
     private String firstName;
     private String phone;
     private Address address;
+    private TimeSlots[] timeSlots = new TimeSlots[15];
     private static int apptPrice;
+
+    private int counter = 0;
 
     public GeneralPractitioner(String lastName, String firstName, String phone, Address address) {
         this.lastName = lastName;
@@ -35,11 +38,21 @@ public class GeneralPractitioner {
         return lastName;
     }
 
+    public void addTimeSlot(TimeSlots timeSlot) {
+        timeSlots[counter] = timeSlot;
+        counter++;
+    }
+
     public void display() {
         System.out.println(this.lastName.toUpperCase() + " " + this.firstName);
         System.out.println("Phone number : " + this.phone);
         System.out.println("Appointment price : " + apptPrice);
         System.out.println("Address :");
         this.address.display();
+        for (TimeSlots timeSlot : timeSlots) {
+            if (timeSlot != null) {
+                timeSlot.displaySlot();
+            }
+        }
     }
 }
