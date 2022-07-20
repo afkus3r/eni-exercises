@@ -40,6 +40,6 @@ public class GeneralPractitioner {
         System.out.println("Phone number : " + this.phone);
         System.out.println("Appointment price : " + apptPrice);
         System.out.println("Address :");
-        System.out.println(this.address);
+        this.address.display();
     }
 }

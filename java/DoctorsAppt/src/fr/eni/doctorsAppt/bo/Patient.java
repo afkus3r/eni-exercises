@@ -35,6 +35,6 @@ public class Patient {
         System.out.println("Birth date : " + this.birthDate);
         System.out.println(Objects.requireNonNullElse(this.comments, "Pas de commentaire"));
         System.out.println("Address :");
-        System.out.println(this.address);
+        this.address.display();
     }
 }
