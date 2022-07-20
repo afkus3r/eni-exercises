@@ -4,13 +4,14 @@ public class GeneralPractitioner {
     private String lastName;
     private String firstName;
     private String phone;
-
+    private Address address;
     private static int apptPrice;
 
-    public GeneralPractitioner(String lastName, String firstName, String phone) {
+    public GeneralPractitioner(String lastName, String firstName, String phone, Address address) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.phone = phone;
+        this.address = address;
         apptPrice = 25;
     }
 
@@ -38,5 +39,7 @@ public class GeneralPractitioner {
         System.out.println(this.lastName.toUpperCase() + " " + this.firstName);
         System.out.println("Phone number : " + this.phone);
         System.out.println("Appointment price : " + apptPrice);
+        System.out.println("Address :");
+        System.out.println(this.address);
     }
 }
