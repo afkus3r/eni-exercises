@@ -1,20 +1,13 @@
 package fr.eni.doctorsAppt.bo;
 
-public class GeneralPractitioner {
-    private String lastName;
-    private String firstName;
-    private String phone;
-    private Address address;
+public class GeneralPractitioner extends Person{
     private TimeSlots[] timeSlots = new TimeSlots[15];
     private static int apptPrice;
 
     private int counter = 0;
 
     public GeneralPractitioner(String lastName, String firstName, String phone, Address address) {
-        this.lastName = lastName;
-        this.firstName = firstName;
-        this.phone = phone;
-        this.address = address;
+        super(lastName, firstName, phone, address);
         apptPrice = 25;
     }
 

@@ -3,25 +3,18 @@ package fr.eni.doctorsAppt.bo;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Patient {
-    private String lastName;
-    private String firstName;
-    private String phone;
+public class Patient extends Person{
     private char sex;
     private long ssn;
     private LocalDate birthDate ;
     private String comments;
-    private Address address;
 
     public Patient(String lastName, String firstName, String phone, char sex, long ssn, LocalDate birthDate, String comments, Address address) {
-        this.lastName = lastName;
-        this.firstName = firstName;
-        this.phone = phone;
+        super(lastName, firstName, phone, address);
         this.sex = sex;
         this.ssn = ssn;
         this.birthDate = birthDate;
         this.comments = comments;
-        this.address = address;
     }
 
     public void display() {
