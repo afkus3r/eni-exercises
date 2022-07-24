@@ -1,8 +1,8 @@
 package fr.eni.doctorsAppt.bo;
 
 public class GeneralPractitioner extends Person{
-    private TimeSlots[] timeSlots = new TimeSlots[15];
-    private static int apptPrice;
+    protected TimeSlots[] timeSlots = new TimeSlots[15];
+    protected static int apptPrice;
 
     private int counter = 0;
 
