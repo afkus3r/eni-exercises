@@ -1,12 +1,12 @@
 package fr.eni.stationaryShop.bo;
 
 public abstract class Item {
-    private int itemID;
-    private String ref;
-    private String brand;
-    private String designation;
-    private float unitaryPrice;
-    private int stockQty;
+    protected int itemID;
+    protected String ref;
+    protected String brand;
+    protected String designation;
+    protected float unitaryPrice;
+    protected int stockQty;
 
     // Builders
     public Item(int itemID, String brand, String ref, String designation, float unitaryPrice, int stockQty) {
@@ -76,7 +76,6 @@ public abstract class Item {
     }
 
     // toString
-
     @Override
     public String toString() {
         return "Item [itemID=" + this.itemID + ", ref=" + this.ref + ", brand=" + this.brand + ", designation=" + this.designation + ", unitaryPrice=" + this.unitaryPrice + ", stockQty=" + this.stockQty + "]";
