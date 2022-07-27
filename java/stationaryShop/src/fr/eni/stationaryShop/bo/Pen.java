@@ -23,6 +23,7 @@ public class Pen extends Item {
         this.color = color;
     }
 
+    // toString
     @Override
     public String toString() {
         return super.toString() + "Pen [color=" + this.color + "]";
