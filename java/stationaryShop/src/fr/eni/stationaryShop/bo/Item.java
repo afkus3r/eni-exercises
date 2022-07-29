@@ -26,6 +26,10 @@ public abstract class Item {
         this.stockQty = stockQty;
     }
 
+    public Item() {
+
+    }
+
     // Getters and setters
     public Integer getItemID() {
         return itemID;

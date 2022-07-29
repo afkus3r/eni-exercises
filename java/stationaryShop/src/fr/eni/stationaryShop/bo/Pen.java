@@ -4,6 +4,10 @@ public class Pen extends Item {
     private String color;
 
     // Builders
+    public Pen() {
+        super();
+    }
+
     public Pen(Integer itemID, String brand, String ref, String designation, float unitaryPrice, int stockQty, String color) {
         super(itemID, brand, ref, designation, unitaryPrice, stockQty);
         this.color = color;

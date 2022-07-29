@@ -1,9 +1,13 @@
 package fr.eni.stationaryShop.bo;
 
-public class Ream extends Item{
+public class Ream extends Item {
     private int weight;
 
     // Builders
+    public Ream() {
+        super();
+    }
+
     public Ream(Integer itemID, String brand, String ref, String designation, float unitaryPrice, int stockQty, int weight) {
         super(itemID, brand, ref, designation, unitaryPrice, stockQty);
         this.weight = weight;
