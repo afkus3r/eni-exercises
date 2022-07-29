@@ -1,7 +1,7 @@
 package fr.eni.stationaryShop.bo;
 
 public abstract class Item {
-    protected int itemID;
+    protected Integer itemID;
     protected String ref;
     protected String brand;
     protected String designation;
@@ -9,7 +9,7 @@ public abstract class Item {
     protected int stockQty;
 
     // Builders
-    public Item(int itemID, String brand, String ref, String designation, float unitaryPrice, int stockQty) {
+    public Item(Integer itemID, String brand, String ref, String designation, float unitaryPrice, int stockQty) {
         this.itemID = itemID;
         this.brand = brand;
         this.ref = ref;
@@ -27,11 +27,11 @@ public abstract class Item {
     }
 
     // Getters and setters
-    public int getItemID() {
+    public Integer getItemID() {
         return itemID;
     }
 
-    public void setItemID(int itemID) {
+    public void setItemID(Integer itemID) {
         this.itemID = itemID;
     }
 

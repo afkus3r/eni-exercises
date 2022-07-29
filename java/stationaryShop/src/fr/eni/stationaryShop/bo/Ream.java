@@ -4,7 +4,7 @@ public class Ream extends Item{
     private int weight;
 
     // Builders
-    public Ream(int itemID, String brand, String ref, String designation, float unitaryPrice, int stockQty, int weight) {
+    public Ream(Integer itemID, String brand, String ref, String designation, float unitaryPrice, int stockQty, int weight) {
         super(itemID, brand, ref, designation, unitaryPrice, stockQty);
         this.weight = weight;
     }

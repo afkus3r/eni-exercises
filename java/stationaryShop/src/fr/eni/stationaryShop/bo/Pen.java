@@ -4,7 +4,7 @@ public class Pen extends Item {
     private String color;
 
     // Builders
-    public Pen(int itemID, String brand, String ref, String designation, float unitaryPrice, int stockQty, String color) {
+    public Pen(Integer itemID, String brand, String ref, String designation, float unitaryPrice, int stockQty, String color) {
         super(itemID, brand, ref, designation, unitaryPrice, stockQty);
         this.color = color;
     }
