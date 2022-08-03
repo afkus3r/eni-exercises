@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class JdbcTools {
-    static Connection getConnection() throws IOException, SQLException {
+    public static Connection getConnection() throws IOException, SQLException {
 
         Properties settings = new Properties();
         settings.load(JdbcTools.class.getResourceAsStream("settings.properties"));
