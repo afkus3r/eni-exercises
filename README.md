@@ -13,6 +13,14 @@ In this repo I save the projects and exercises I make as part of my Web Develope
 <details>
 <summary> Click to see oop Java exercises ⚙️ </summary>
 
+**TP3 [Java EE Portfolio](https://github.com/sheilaJava/eni-exercises/tree/main/java/JavaEEPortfolio)** :
+A portfolio for my Java EE Projects.
+
+**TP2 [Stationary Shop](https://github.com/sheilaJava/eni-exercises/tree/main/java/stationaryShop)** :
+Stationary store app.
+- DAO Pattern
+- JDBC driver
+
 **TP1 [Doctors Appt](https://github.com/sheilaJava/eni-exercises/tree/main/java/DoctorsAppt)** :
 Doctors' appointments booking app.
 - Test classes
