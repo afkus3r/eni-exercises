@@ -3,8 +3,8 @@ package fr.eni.guessTheNumber;
 import java.io.IOException;
 import java.util.Random;
 
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
+import javax.servlet.http.*;
+import javax.servlet.annotation.*;
 
 @WebServlet(name = "guessNumberServlet", value = "/guessNumberServlet")
 public class GuessNumberServlet extends HttpServlet {
