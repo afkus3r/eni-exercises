@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Application de démonstration</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/4-col-portfolio.css" rel="stylesheet">
+    
+    <!-- Google code prettify -->
+	<link rel="stylesheet" type="text/css" href="../../../vendor/google-code-prettify/prettify.css">
+	
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">Z5HNVW24N33T-678105430-3791</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">97f63940-5e0a-421a-be90-d4451a5def18</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">http://inet/eni-transverse/ecole-num�rique/_layouts/15/DocIdRedir.aspx?ID=Z5HNVW24N33T-678105430-3791, Z5HNVW24N33T-678105430-3791</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+  <body onload="PR.prettyPrint()">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../module.html">Application de démonstration - Module 2</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../../../index.html">Accueil
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading -->
+      <h1 class="my-4">Démonstration 1
+        <small>La première servlet</small>
+      </h1>
+      <h2>Exemple avec configuration dans le fichier web.xml</h2>
+	  <p>
+	  	Le lien suivant permet d'accéder la servlet PremiereServletConfigurationWebXML :
+	  	<a href="../PremiereServletConfigurationWebXML">/modules/module2/PremiereServletConfigurationWebXML</a>
+	  </p>
+	  <p>Voici le code de la servlet :</p>
+
+	 <pre class="prettyprint">
+	 	<code class="language-java">
+package fr.eni.javaee.module2;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class PremiereServletConfigurationWebXML
+ */
+public class PremiereServletConfigurationWebXML extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public PremiereServletConfigurationWebXML() {
+        super();
+       
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getWriter().append("Configuration par web.xml - Served at : ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}
+		</code>
+	 </pre>
+
+	  <p>Voici le paramétrage dans le descripteur de déploiement (web.xml) :</p>
+	 <pre class="prettyprint">
+	 	<code class="language-xml">
+&lt;servlet&gt;
+	&lt;description&gt;Servlet Module 2 Démonstration 1&lt;/description&gt;
+	&lt;servlet-name&gt;PremiereServletConfigurationWebXML&lt;/servlet-name&gt;
+	&lt;servlet-class&gt;fr.eni.javaee.module2.PremiereServletConfigurationWebXML&lt;/servlet-class&gt;
+&lt;/servlet&gt;
+	&lt;servlet-mapping&gt;
+	&lt;servlet-name&gt;PremiereServletConfigurationWebXML&lt;/servlet-name&gt;
+	&lt;url-pattern&gt;/modules/module2/PremiereServletConfigurationWebXML&lt;/url-pattern&gt;
+&lt;/servlet-mapping&gt;
+		</code>
+	 </pre>	  
+	 
+	 <h2>Exemple avec configuration par annotation</h2>
+	  <p>
+	  	Le lien suivant permet d'accéder la servlet PremiereServletConfigurationAnnotation :
+	  	<a href="../PremiereServletConfigurationAnnotation">/modules/module2/PremiereServletConfigurationAnnotation</a>
+	  </p>
+	
+	  <p>Voici le code de la servlet :</p>
+
+	 <pre class="prettyprint">
+	 	<code class="language-java">
+package fr.eni.javaee.module2;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class PremiereServletConfigurationAnnotation
+ */
+@WebServlet("/modules/module2/PremiereServletConfigurationAnnotation")
+public class PremiereServletConfigurationAnnotation extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public PremiereServletConfigurationAnnotation() {
+        super();
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getWriter().append("Configuration par annotation - Served at : ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}
+		</code>
+	 </pre>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark footer-demodule">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; ENI Ecole 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ 	<!-- Google code prettify -->
+	<script type="text/javascript" src="../../../vendor/google-code-prettify/prettify.js"></script>
+
+  </body>
+
+</html>

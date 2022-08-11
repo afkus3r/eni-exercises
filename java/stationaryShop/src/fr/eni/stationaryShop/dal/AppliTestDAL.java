@@ -12,7 +12,7 @@ public class AppliTestDAL {
     public static void main(String[] args) throws Exception {
 
         //Déclaration et instanciation de la DAO
-        ItemDAO articleDAO = new ItemDAOJdbcImpl();
+        DAO<Item> articleDAO = new ItemDAOJdbcImpl();
 
         //Instanciation du jeu d'essai
         Item a1 = new Pen("Bic", "BBOrange", "Bic bille Orange", 1.2f, 20, "bleu");

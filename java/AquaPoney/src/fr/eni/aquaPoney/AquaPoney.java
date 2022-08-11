@@ -17,10 +17,11 @@ public class AquaPoney {
 
     public static void main(String[] args) {
         Scanner enterInput = new Scanner(System.in);
-        int randomIndex;
+
         String BousquetString = "";
         String LeVeauString = "";
         String DuboscString = "";
+        int randomIndex;
 
         // Initialize and display pool for the start
         displayPool(initializePool(Bousquet), initializePool(LeVeau), initializePool(Dubosc));
@@ -98,6 +99,7 @@ public class AquaPoney {
                         counter3 = 0;
                     }
                 }
+
                 // Display pool after the ponies moved
                 displayPool(BousquetString, LeVeauString, DuboscString);
             }

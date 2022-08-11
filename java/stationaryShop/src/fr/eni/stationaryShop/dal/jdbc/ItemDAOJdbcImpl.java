@@ -3,7 +3,7 @@ package fr.eni.stationaryShop.dal.jdbc;
 import fr.eni.stationaryShop.bo.Item;
 import fr.eni.stationaryShop.bo.Pen;
 import fr.eni.stationaryShop.bo.Ream;
-import fr.eni.stationaryShop.dal.ItemDAO;
+import fr.eni.stationaryShop.dal.DAO;
 
 import java.io.IOException;
 import java.sql.*;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class ItemDAOJdbcImpl implements ItemDAO {
+public class ItemDAOJdbcImpl implements DAO<Item> {
 
     @Override
     public void insert(Item i) throws SQLException, IOException {
