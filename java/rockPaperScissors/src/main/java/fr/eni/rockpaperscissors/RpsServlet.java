@@ -13,7 +13,7 @@ import javax.servlet.annotation.*;
 public class RpsServlet extends HttpServlet {
 
     @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         String playerChoice = request.getParameter("player");
         String computerChoice;
 
@@ -45,12 +45,14 @@ public class RpsServlet extends HttpServlet {
         request.setAttribute("player", playerChoice);
         request.setAttribute("computer", computerChoice);
 
-        RequestDispatcher rd = request.getRequestDispatcher("/java/rockPaperScissors/src/main/webapp/WEB-INF/outcome.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/outcome.jsp");
+        rd.forward(request, response);
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher rd = request.getRequestDispatcher("/java/rockPaperScissors/src/main/webapp/WEB-INF/index.jsp");
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/index.jsp");
+        rd.forward(request, response);
     }
 
     public void destroy() {

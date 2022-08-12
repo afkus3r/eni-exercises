@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%!
+<%
     String result = (String)request.getAttribute("result");
     String computer = (String)request.getAttribute("computer");
     String player = (String)request.getAttribute("player");
