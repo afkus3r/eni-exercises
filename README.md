@@ -13,6 +13,15 @@ In this repo I save the projects and exercises I make as part of my Web Develope
 <details>
 <summary> Click to see oop Java exercises ⚙️ </summary>
 
+**TP3 [Rock Paper Scissors](https://github.com/sheilaJava/eni-exercises/tree/main/java/rockPaperScissors)** :
+A simple Rock Paper Scissors game played against the computer.
+- JSP Files
+- Java Scriplets, ```<% %>```
+
+**TP4 [Guess The Number](https://github.com/sheilaJava/eni-exercises/tree/main/java/guessTheNumber)** :
+Guess the Number is a simple app that generates a random number and lets the user guess what it is.
+- Servlet, ```@WebInitParam```, ```response.sendRedirect```
+
 **TP3 [Java EE Portfolio](https://github.com/sheilaJava/eni-exercises/tree/main/java/JavaEEPortfolio)** :
 A portfolio for my Java EE Projects.
 
