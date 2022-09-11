@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+  <div class="logo">
+    <a href="${pageContext.request.contextPath}/accueil">COCOWIKI</a>
+  </div>
+  <nav>
+    <a href="${pageContext.request.contextPath}/NouvelleVente">Vendre un article</a>
+    <a href="${pageContext.request.contextPath}/Administration">Panel administrateur</a>
+  </nav>
+  <div class="lightBlue">
+  <img src="../img/coin.png" width="24px">
+  <p>1250 CRT</p>
+  </div>
+  <a class="white" href="${pageContext.request.contextPath}/deconnexion">Se Déconnecter</a>
+  <a class="blue" href="${pageContext.request.contextPath}/MonProfil?pseudo=${sessionScope.utilisateur.pseudo}">Mon Profil</a>
+</header>
+</body>
+</html>
