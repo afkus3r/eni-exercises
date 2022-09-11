@@ -86,6 +86,15 @@ Calculates the required cooking time depending on the chosen meat, its weight an
 ## FrontEnd
 
 <details>
+<summary> Click to see all JavaScript exercises ⚡️ </summary>
+
+
+**TP1 [Integer and string manipulations](https://github.com/sheilaJava/eni-exercises/tree/main/frontend/javascript/integerAndStringManipulation)** : 
+Three basic string and integer manipulation exercises.
+
+</details>
+
+<details>
 <summary> Click to see all HTML and CSS exercises 💅🏻 </summary>
 
 
