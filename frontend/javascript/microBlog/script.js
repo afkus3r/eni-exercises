@@ -7,6 +7,7 @@ todayDate = todayDate.getFullYear() + "-" + ("0" + (todayDate.getMonth() + 1)).s
 document.querySelector("#date").setAttribute("value", todayDate);
 document.querySelector("#date").setAttribute("placeholder", todayDate);
 
+// Create blog post
 submit.addEventListener("click", () => {
     const date = document.querySelector("#date").value;
     const message = document.querySelector("#text").value;

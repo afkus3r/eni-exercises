@@ -10,7 +10,7 @@ body {
     color: #444;
 }
 
-form {
+.form {
     display: flex;
     flex-direction: column;
 }
