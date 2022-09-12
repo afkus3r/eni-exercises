@@ -11,7 +11,7 @@ submit.addEventListener("click", () => {
     const date = document.querySelector("#date").value;
     const message = document.querySelector("#text").value;
     const author = document.querySelector("#author").value;
-    if (message !== "" && author !== "") {
+    if (message && author) {
         const post = document.createElement("div");
         post.classList.add("post");
         postGroup.appendChild(post);
