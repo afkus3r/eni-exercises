@@ -97,6 +97,9 @@ Three basic string and integer manipulation exercises.
 <details>
 <summary> Click to see all HTML and CSS exercises 💅🏻 </summary>
 
+**TP2 [Micro blog](https://github.com/sheilaJava/eni-exercises/tree/main/frontend/javascript/microBlog)** : 
+Micro blog, lets user post messsages and delete them by clicking on them, to-do list style.
+- DOM manipulation
 
 **TP1 [Form](https://github.com/sheilaJava/eni-exercises/blob/main/frontend/forms/form.html)** : 
 Simple HTML form.
