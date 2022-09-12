@@ -28,11 +28,11 @@ submit.addEventListener("click", () => {
         const postDate = document.createElement("h4");
         postDate.innerHTML = date;
 
-        postInfo.appendChild(postAuthor);
-        postInfo.appendChild(postDate);
-
         post.appendChild(postMessage);
         post.appendChild(postInfo);
+
+        postInfo.appendChild(postAuthor);
+        postInfo.appendChild(postDate);
     } else {
         alert("All fields are mandatory");
     }
