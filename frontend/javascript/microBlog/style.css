@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #444;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 20px;
+}
+
+input {
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #444;
+    font-size: 18px;
+    font-family: "Times New Roman";
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    padding: 8px 24px;
+    font-family: "Times New Roman";
+    font-size: 18px;
+    margin: 16px auto 0 auto;
+    border-radius: 0;
+    background-color: #ffffff;
+    border: 1px solid #444444;
+}
+
+.postGroup {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    border-bottom: 1px solid #F2F2F2;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+h2 {
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h3, h4 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.postInfo {
+    display: flex;
+    justify-content: space-between;
+}
