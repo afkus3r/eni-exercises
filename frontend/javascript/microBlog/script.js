@@ -1,5 +1,6 @@
 const submit = document.querySelector("#submit");
 const postGroup = document.querySelector(".postGroup");
+const allPosts = document.querySelectorAll(".post");
 
 // Set date input value and placeholder as today's date
 let todayDate = new Date();
@@ -34,6 +35,11 @@ submit.addEventListener("click", () => {
 
         postInfo.appendChild(postAuthor);
         postInfo.appendChild(postDate);
+
+        // Delete blog post on click
+        post.addEventListener("click", () => {
+            post.remove();
+        })
     } else {
         alert("All fields are mandatory");
     }
