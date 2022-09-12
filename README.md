@@ -88,6 +88,9 @@ Calculates the required cooking time depending on the chosen meat, its weight an
 <details>
 <summary> Click to see all JavaScript exercises ⚡️ </summary>
 
+**TP2 [Micro blog](https://github.com/sheilaJava/eni-exercises/tree/main/frontend/javascript/microBlog)** : 
+Micro blog, lets user post messsages and delete them by clicking on them, to-do list style.
+- DOM manipulation
 
 **TP1 [Integer and string manipulations](https://github.com/sheilaJava/eni-exercises/tree/main/frontend/javascript/integerAndStringManipulation)** : 
 Three basic string and integer manipulation exercises.
@@ -96,10 +99,6 @@ Three basic string and integer manipulation exercises.
 
 <details>
 <summary> Click to see all HTML and CSS exercises 💅🏻 </summary>
-
-**TP2 [Micro blog](https://github.com/sheilaJava/eni-exercises/tree/main/frontend/javascript/microBlog)** : 
-Micro blog, lets user post messsages and delete them by clicking on them, to-do list style.
-- DOM manipulation
 
 **TP1 [Form](https://github.com/sheilaJava/eni-exercises/blob/main/frontend/forms/form.html)** : 
 Simple HTML form.
