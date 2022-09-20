@@ -7,7 +7,6 @@ let currentSpeed = 0;
 let averageSpeed = 0;
 
 textArea.addEventListener("focus", () => {
-    console.log("coucou");
     do {
         if (charCount === 0) {
             setTimeout(() => {
