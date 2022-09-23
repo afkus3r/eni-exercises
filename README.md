@@ -88,6 +88,13 @@ Calculates the required cooking time depending on the chosen meat, its weight an
 <details>
 <summary> Click to see all JavaScript exercises ⚡️ </summary>
 
+**TP4 [Auction App](https://github.com/sheilaJava/eni-exercises/tree/main/frontend/javascript/auctionApp)** :
+Interfaces and classes for an auction app.
+- TypeScript
+
+**TP3 [Donkey type](https://github.com/sheilaJava/eni-exercises/tree/main/frontend/javascript/donkeyType)** :
+Calculate typing speed.
+
 **TP2 [Micro blog](https://github.com/sheilaJava/eni-exercises/tree/main/frontend/javascript/microBlog)** : 
 Micro blog, lets user post messsages and delete them by clicking on them, to-do list style.
 - DOM manipulation
