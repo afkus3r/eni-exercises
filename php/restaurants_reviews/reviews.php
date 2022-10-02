@@ -10,27 +10,40 @@
 <body>
 <main>
     <?php
-    // DB Connection
-    try {
-        $dsn = 'mysql:host=localhost;dbname=restaurant';
-        $options = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"];
-        $pdo = new PDO($dsn, 'root', '', $options);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch (PDOException $e) {
-        $msg = 'PDO ERROR in ' . $e->getFile() . ' : ' . $e->getLine() . ' : ' . $e->getMessage();
-        die($msg);
-    }
+    function getRestaurantList()
+    {
+        // DB Connection
+        try {
+            $dsn = 'mysql:host=localhost;dbname=restaurant';
+            $options = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"];
+            $pdo = new PDO($dsn, 'root', '', $options);
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            $msg = 'PDO ERROR in ' . $e->getFile() . ' : ' . $e->getLine() . ' : ' . $e->getMessage();
+            die($msg);
+        }
 
-    // SQL Instructions
-    function getRestaurantList () {
+        // SQL Instructions
         $SELECT_ALL_RESAURANTS_NAME = 'SELECT name FROM restaurants';
         $prep = $pdo->prepare($SELECT_ALL_RESAURANTS_NAME);
         $prep->execute();
-        $restaurantArray = $prep->fetch();
-        return $restaurantArray;
+        return $prep->fetch();
     }
 
-    function getCity ($name) {
+    function getCity($name)
+    {
+        // DB Connection
+        try {
+            $dsn = 'mysql:host=localhost;dbname=restaurant';
+            $options = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"];
+            $pdo = new PDO($dsn, 'root', '', $options);
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            $msg = 'PDO ERROR in ' . $e->getFile() . ' : ' . $e->getLine() . ' : ' . $e->getMessage();
+            die($msg);
+        }
+
+        // SQL Instructions
         $SELECT_CITY = 'SELECT city FROM restaurants WHERE name = :name';
         $prep = $pdo->prepare($SELECT_CITY);
         $prep->bindValue(':name', $name);
@@ -39,7 +52,20 @@
         return implode('', $city);
     }
 
-    function getDescription ($name) {
+    function getDescription($name)
+    {
+        // DB Connection
+        try {
+            $dsn = 'mysql:host=localhost;dbname=restaurant';
+            $options = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"];
+            $pdo = new PDO($dsn, 'root', '', $options);
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            $msg = 'PDO ERROR in ' . $e->getFile() . ' : ' . $e->getLine() . ' : ' . $e->getMessage();
+            die($msg);
+        }
+
+        // SQL Instructions
         $SELECT_DESCRIPTION = 'SELECT description FROM restaurants WHERE name = :name';
         $prep = $pdo->prepare($SELECT_DESCRIPTION);
         $prep->bindValue(':name', $name);
@@ -47,6 +73,7 @@
         $description = $prep->fetch();
         return implode('', $description);
     }
+
     ?>
 </main>
 </body>
