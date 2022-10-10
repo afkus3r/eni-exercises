@@ -1,7 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} {# todo : display wish name #} {% endblock %}
+{% block title %} {{ wish.title }} {% endblock %}
 
 {% block main %}
-
+    <h1>{{ wish.title }}</h1>
+    <p>{{ wish.description }}</p>
+    <p>{{ wish.author }}</p>
 {% endblock %}
