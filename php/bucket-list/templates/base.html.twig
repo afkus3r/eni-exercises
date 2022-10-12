@@ -10,7 +10,10 @@
 </head>
 <body>
 <header>
-    <p class="logo">Bucket-List</p>
+    <div class="logo">
+        <img src="{{ asset('img/logo.svg') }}" alt="Logo" width="18px">
+        <p>Bucket-List</p>
+    </div>
     <nav>
         <a href="{{ path('main_index') }}">Home</a>
         <a href="{{ path('wish_list') }}">Wish List</a>

@@ -1,5 +1,12 @@
 {% extends 'base.html.twig' %}
 
 {% block main %}
-
+<div class="hero">
+    <h1>Add wishes to a bucket-list</h1>
+    <p>"I want to eat the biggest burger in the world" - Alex</p>
+    <a class="blackButton" href="{{ path('wish_list') }}">See the list</a>
+    <img class="heroImg1" src="{{ asset('img/44.svg') }}" alt="Illustration">
+    <img class="heroImg2" src="{{ asset('img/5.svg') }}" alt="Illustration">
+    <img class="heroImg3" src="{{ asset('img/66.svg') }}" alt="Illustration">
+</div>
 {% endblock %}
